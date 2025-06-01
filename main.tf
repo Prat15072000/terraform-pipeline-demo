@@ -9,7 +9,7 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
-  subscription_id = ""
+  subscription_id = "7e185f1c-e860-425a-adf9-922e298f43dc"
   features {
     # resource_group {
     #   prevent_deletion_if_contains_resources = false
