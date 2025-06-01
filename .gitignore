@@ -1,5 +1,5 @@
 backend.tf
 main.tf
 secret.tf
-#.terraform/
+.terraform/
 
