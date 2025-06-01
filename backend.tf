@@ -4,5 +4,6 @@ terraform {
       storage_account_name = "statefileforprat"
       container_name = "statefilecontainer"
       key = "terraform.tfstate"
+      access_key = locals.key
     }
 }
