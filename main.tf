@@ -9,7 +9,7 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
-  subscription_id = ""
+  subscription_id = "${env.AZURE_SUBSCRIPTION}"
   features {
     # resource_group {
     #   prevent_deletion_if_contains_resources = false
