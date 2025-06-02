@@ -7,9 +7,16 @@ terraform {
   }
 }
 
+variable "azure_subscription" {}
+
+# provider "azurerm" {
+#   subscription_id = var.azure_subscription
+#   features {}
+# }
+
 provider "azurerm" {
   # Configuration options
-  subscription_id = "${env.AZURE_SUBSCRIPTION}"
+  subscription_id = var.azure_subscription
   features {
     # resource_group {
     #   prevent_deletion_if_contains_resources = false
